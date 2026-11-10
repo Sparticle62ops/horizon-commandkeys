@@ -1,3 +1,7 @@
+// Ported to Horizon from CommandKeys by TerminalMC (https://github.com/TerminalMC/CommandKeys).
+// Changed from CommandKeys: re-implemented in Rust for the Horizon native-mod API.
+// Licensed under the Apache License, Version 2.0 (see the LICENSE file in this directory).
+
 // The key hook: records key state and triggers macro activation on press
 // and action on release, like the original's KeyboardHandler.handleKey.
 // The key hook: renamed so the helper does not shadow the native_key "key" parameter

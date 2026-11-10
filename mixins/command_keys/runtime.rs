@@ -1,3 +1,7 @@
+// Ported to Horizon from CommandKeys by TerminalMC (https://github.com/TerminalMC/CommandKeys).
+// Changed from CommandKeys: re-implemented in Rust for the Horizon native-mod API.
+// Licensed under the Apache License, Version 2.0 (see the LICENSE file in this directory).
+
 //! command-keys runtime (port of TerminalMC/CommandKeys, Apache-2.0).
 //!
 //! The 1:1 core read from upstream (commit dc846bd, Macro.java 786 ln and

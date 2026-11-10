@@ -1,3 +1,7 @@
+// Ported to Horizon from CommandKeys by TerminalMC (https://github.com/TerminalMC/CommandKeys).
+// Changed from CommandKeys: re-implemented in Rust for the Horizon native-mod API.
+// Licensed under the Apache License, Version 2.0 (see the LICENSE file in this directory).
+
 // CommandKeys for Horizon: bind keys to macros (chat messages and commands
 // with per-message delays, spacing-based repeats, cycling, random pick, a
 // global ratelimit and the chat length limit). A Rust port of CommandKeys by

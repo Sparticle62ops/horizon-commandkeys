@@ -1,0 +1,36 @@
+id = "commandkeys"
+name = "CommandKeys"
+version = "1.0.1"
+description = """Exact 1:1 Rust translation of [CommandKeys](https://github.com/TerminalMC/CommandKeys)
+(upstream Java, Apache-2.0) by TerminalMC. Carries the upstream license and credit.
+
+Ported for the Horizon client by sparticle.
+
+Client-side chat macros on hotkeys: profiles of macros, each macro a list of
+messages with a primary and optional alternate keybind, activation types
+(HOLD, VANILLA, RELEASE), send modes (SEND, TYPE, EDIT, CYCLE, RANDOM,
+REPEAT), conflict strategies (SUBMIT, ASSERT, VETO, AVOID), per-macro
+ratelimiting, placeholder substitution and automatic per-world/per-server
+profile switching.
+
+The package ships the full module tree (`config`, `keybind_util`,
+`placeholder`, `runtime`, `commands`, `lang`, `gui`), matching source
+revision on main. The mod API wires the config key (K) and the macro MC
+activator keys as key mappings, the trigger path through the input and
+mouse hooks, chat sends through the network host, the client commands
+(`/commandkeys`, `/commandkeys profile <name>`) and the editor screens as
+mod screens.
+
+Pinned to Horizon f00125f and horizon-mixins e59da909; exact 1:1 Rust port tested against those revisions.
+
+Licence: Apache-2.0 (LICENSE carries the upstream text). Source: https://github.com/Sparticle62ops/horizon-commandkeys
+"""
+authors = ["TerminalMC", "sparticle"]
+api = "0.2"
+side = "client"
+capabilities = []
+
+[native]
+game = "26.3"
+horizon = "f00125f61f794aaa3d4e950d301f353b35b6ee3d"
+mixins = "e59da9094f0c2fdda6c627fe9eff22dec6a906f0"

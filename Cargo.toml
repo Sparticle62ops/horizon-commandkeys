@@ -1,10 +1,16 @@
 [package]
-name = "horizon-mod-commandkeys"
-version = "1.0.0"
-edition = "2024"
-license = "Apache-2.0"
-publish = false
-description = "Keybind macros (delays, repeats, cycling, ratelimit) for Horizon chat: a Rust port of CommandKeys."
+name = "commandkeys"
+version = "1.0.1"
+edition = "2021"
 
 [lib]
-path = "runtime.rs"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+horizon-mod-api = { path = ".horizon/sdk/api/crates/horizon-mod-api" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+regex = "1"
+
+[profile.release]
+opt-level = 2
